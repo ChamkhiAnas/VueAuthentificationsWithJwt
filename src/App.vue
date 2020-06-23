@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-     <product-list-one></product-list-one>
-    <product-list-two></product-list-two>
+     <product-list-one v-bind:products="products"></product-list-one>
+    <product-list-two v-bind:products="products"></product-list-two>
 
   </div>
 </template>
@@ -25,8 +25,6 @@ export default {
         {name:"Shiny Star",price:40},
         {name:"Green Shels",price:60},
         {name:"Red Shels",price:80},
-
-
 
       ]
 
