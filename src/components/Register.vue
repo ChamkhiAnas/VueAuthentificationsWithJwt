@@ -17,10 +17,6 @@
           <input id="password" type="password" v-model="password" required>
       </div>
 
-      <label for="password-confirm">Confirm Password</label>
-      <div>
-          <input id="password-confirm" type="password" v-model="password_confirmation" required>
-      </div>
 
       <div>
           <button type="submit">Register</button>
