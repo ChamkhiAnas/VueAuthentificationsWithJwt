@@ -12,6 +12,18 @@ export default new Vuex.Store({
       {name:"Red Shels",price:80},
     ]
   },
+  getters:{
+  saleProducts:state=>{
+    var saleProducts=state.products.map(product => {
+        return {
+          name:"**"+product.name+"**",
+          price:product.price/2
+        }
+      });
+      return saleProducts;
+    }
+   
+  },
   mutations: {
   },
   actions: {
