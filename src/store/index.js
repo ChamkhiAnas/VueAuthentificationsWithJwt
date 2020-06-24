@@ -18,19 +18,8 @@ export default new Vuex.Store({
     user : {}
   },
   getters:{
-  saleProducts:state=>{
-    var saleProducts=state.products.map(product => {
-        return {
-          name:"**"+product.name+"**",
-          price:product.price/2
-        }
-      });
-      return saleProducts;
-    },
     isLoggedIn: state => !!state.token,
     authStatus: state => state.status,
-  
-   
   },
   mutations: {
     reducePrice:(state,payload)=>{
@@ -92,6 +81,7 @@ export default new Vuex.Store({
             resolve(resp)
           })
           .catch(err => {
+            console.log("hadhcimadazche",err)
             commit('auth_error', err)
             localStorage.removeItem('token')
             reject(err)
