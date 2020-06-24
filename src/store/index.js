@@ -5,6 +5,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    
+    products:[
+      {name:"Banana Skin",price:20},
+      {name:"Shiny Star",price:40},
+      {name:"Green Shels",price:60},
+      {name:"Red Shels",price:80},
+
+    ]
   },
   mutations: {
   },
