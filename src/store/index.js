@@ -36,6 +36,12 @@ export default new Vuex.Store({
       setTimeout(function(){
         context.commit('reducePrice',payload)
       },2000)
+    },
+    login:context=>{
+
+    },
+    register:context=>{
+      
     }
   },
   modules: {

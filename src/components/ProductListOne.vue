@@ -16,17 +16,18 @@
 </template>
 
 <script>
+
 export default {
 
     computed:{
       products(){
         return this.$store.state.products;
       },
-
- 
+      saleProducts(){
+      return this.$store.getters.saleProducts
+      }
     },
     methods:{
-   
       reducePrice:function(amount){
         // this.$store.state.products.forEach(product=>{
         //   product.price-=1
