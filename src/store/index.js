@@ -37,12 +37,12 @@ export default new Vuex.Store({
         context.commit('reducePrice',payload)
       },2000)
     },
-    login:context=>{
+    // login:context=>{
 
-    },
-    register:context=>{
-      
-    }
+    // },
+    // register:context=>{
+
+    // }
   },
   modules: {
   }
